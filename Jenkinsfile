@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'maven'
+        maven 'Maven'
     }
 
     stages {
@@ -16,8 +16,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                pkill -f jar || true
-                nohup java -jar target/*.jar &
+                pkill -f demo-app || true
+                nohup java -jar target/demo-app-1.0.jar > app.log 2>&1 &
                 '''
             }
         }
