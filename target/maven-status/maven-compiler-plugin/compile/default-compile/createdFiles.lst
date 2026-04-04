@@ -1,0 +1,4 @@
+com/shoeb/devops/demo/model/User.class
+com/shoeb/devops/demo/DemoApplication.class
+com/shoeb/devops/demo/service/UserService.class
+com/shoeb/devops/demo/controller/HomeController.class
